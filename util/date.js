@@ -1,28 +1,29 @@
 /**
- *  时间戳工具类
- *  @author of1518_gcy
- *  @date 2015/07/22
+ *  时间工具类
+ *  @author gcy
+ *  @date 2016/07/13
  */
 
 /**
- * 返回所加天数的==>年月日
- *  @param AddDayCount
+ *  返回所加天数的==>年月日
+ *
+ *  @param count //获取AddDayCount天后的日期
  */
-exports.getDateStr = (AddDayCount)=>{
+exports.getDateStr = function(count){
   var dd = new Date();
-  dd.setDate(dd.getDate()+AddDayCount);//获取AddDayCount天后的日期
+  dd.setDate(dd.getDate()+count);
   var y = dd.getFullYear();
   var m = dd.getMonth()+1 < 10 ? ('0'+(dd.getMonth()+1))  : dd.getMonth()+1;
   var d = dd.getDate() < 10 ? ('0'+dd.getDate()) : dd.getDate();
   return y+"-"+m+"-"+d;
 };
 
-
 /**
  *  返回所加天数的==>年月日 时分秒
  *  @param count
+ *  @return string
  */
-exports.getAddDateStr = (count)=> {
+exports.getAddDateStr = function (count){
   var d = new Date();
   d.setDate(d.getDate()+count);       //获取几天后的count日期;count可以为负数
   var year = d.getFullYear();
@@ -34,14 +35,10 @@ exports.getAddDateStr = (count)=> {
   return year+'-'+mouth+'-'+day+' '+hour+':'+min+':'+seconds;
 };
 
-
-
-
-
 /**
  *  获取当天起始时间
  *  @param date
- *  @return timeStr
+ *  @return string
  *  @example 2015/07/22 00:00:00
  */
 exports.getDayStart = function(date){
@@ -58,11 +55,10 @@ exports.getDayStart = function(date){
   return timeStr;
 };
 
-
 /**
  *  获取当天结尾时间
  *  @param  date
- *  @return timeStr
+ *  @return string
  *  @example 2015/07/22 23:59:59
  */
 exports.getDayEnd = function(date){
@@ -79,21 +75,10 @@ exports.getDayEnd = function(date){
   return timeStr;
 };
 
-
-/**
- *  获取当天时间前一天时间
- *  @param date
- *  @return timeStr
- *  @example 2015/08/14
- */
-exports.getYesterday = function(date){
-
-};
-
 /**
  *  获取本周起始时间
  *  @param date
- *  @return timeStr
+ *  @return Date
  *  @example
  */
 exports.getWeekStart = function(date){
@@ -101,7 +86,6 @@ exports.getWeekStart = function(date){
   var month = date.getMonth();
   var day = date.getDate();
 };
-
 
 /**
  *  获取本周结尾时间
@@ -115,11 +99,10 @@ exports.getWeekEnd = function(date){
   var day = date.getDate();
 };
 
-
 /**
  *  获取本月起始时间
  *  @param date
- *  @return timeStr
+ *  @return string
  *  @example 2015/07/01 00:00:00
  */
 exports.getMonthStart = function(date){
@@ -132,12 +115,10 @@ exports.getMonthStart = function(date){
   return timeStr;
 };
 
-
 /**
  *  获取本月结尾时间
- * @param   date
- * @return timeStr
- * @example 2015/07/31 23:59:59
+ * @param  date
+ * @return string
  */
 exports.getMonthEnd = function(date){
   var year = date.getFullYear();
@@ -161,12 +142,11 @@ exports.getMonthEnd = function(date){
   return timeStr;
 };
 
-
 /**
  *  获取本季度起始时间
  * @param   date
- * @return timeStr
- * @example Q3: 2015-07-01 00:00:00
+ * @return string
+ * @example 2015-07-01 00:00:00
  */
 exports.getQuarterStart = function(date){
   var year = date.getFullYear();
@@ -194,11 +174,10 @@ exports.getQuarterStart = function(date){
   return timeStr;
 };
 
-
 /**
  *  获取本季度结尾时间
  *  @param  date
- *  @return timeStr
+ *  @return string
  *  @example Q3: 2015-09-30 23:59:59
  */
 exports.getQuarterEnd = function(date){
@@ -228,11 +207,10 @@ exports.getQuarterEnd = function(date){
 
 };
 
-
 /**
  *  获取本年起始时间
  *  @param  date
- *  @return timeStr
+ *  @return string
  *  @example 2015-01-01 00:00:00
  */
 exports.getYearStart = function(date){
@@ -241,11 +219,10 @@ exports.getYearStart = function(date){
   return timeStr;
 };
 
-
 /**
  *  获取本年结尾时间
  *  @param  date
- *  @return timeStr
+ *  @return string
  *  @example 2015-12-31 23:59:59
  */
 exports.getYearEnd = function(date){
@@ -253,7 +230,6 @@ exports.getYearEnd = function(date){
   var timeStr = year+'-12-31';
   return timeStr;
 };
-
 
 /**
  *  判断是否为闰年
@@ -266,7 +242,6 @@ exports.isLeapYear = function(year){
   }else
     return false;
 };
-
 
 /**
  *  判断月份或者日期是否为单数

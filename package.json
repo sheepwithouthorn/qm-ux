@@ -1,6 +1,6 @@
 {
   "name": "qm-ux",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "千米公有云管理端UI基础组件库、JS对象扩展、工具类、业务组件",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
     "业务组件"
   ],
   "author": "gcy",
-  "license": "ISC",
+  "license": "BSD",
   "dependencies": {
     "events": "^1.1.0",
     "immutable": "^3.8.1"
