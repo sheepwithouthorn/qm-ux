@@ -1,28 +1,9 @@
 # QM-UX
 qm-ux is a JavaScript library for QIANMI admin web UI.
 
-## Features
-
- * Supports touch devices and [modern](http://caniuse.com/#search=drag) browsers (including IE9)
- * Can drag from one list to another or within the same list
- * CSS animation when moving items
- * Supports drag handles *and selectable text* (better than voidberg's html5sortable)
- * Smart auto-scrolling
- * Built using native HTML5 drag and drop API
- * Supports [Meteor](meteor/README.md), [AngularJS](#ng), [React](#react) and [Polymer](#polymer)
- * Supports any CSS library, e.g. [Bootstrap](#bs)
- * Simple API
- * [CDN](#cdn)
- * No jQuery (but there is [support](#jq))
-
-
-<br/>
-
-
-### Articles
- * [Sortable v1.0 — New capabilities](https://github.com/RubaXa/Sortable/wiki/Sortable-v1.0-—-New-capabilities/) (December 22, 2014)
- * [Sorting with the help of HTML5 Drag'n'Drop API](https://github.com/RubaXa/Sortable/wiki/Sorting-with-the-help-of-HTML5-Drag'n'Drop-API/) (December 23, 2013)
-
+### Features
+ * 对JS中常见的一些对象进行了拓展
+ 
 
 <br/>
 
@@ -42,7 +23,12 @@ render(){
 }
 ```
 
-You can use any element for the list and its elements, not just `ul`/`li`. Here is an [example with `div`s](http://jsbin.com/luxero/2/edit?html,js,output).
-
+You can use any element for the list and its elements, not just `ul`/`li`.
 
 ---
+### 了解我们
+ [千米网-专业电商SAAS服务提供商](http://www.qianmi.com) | [开放平台](http://open.qianmi.com/) | [电商咨询](http://www.qianmi.com/dszx/) [千米社区](http://bbs.qianmi.com/portal.php) | [网站地图](http://www.qianmi.com/sitemap) | [帮助中心](http://help.qianmi.com/hc)
+ 
+### 加入我们
+ [工作机会](http://qianmi.zhiye.com/)
+                                                                                    
