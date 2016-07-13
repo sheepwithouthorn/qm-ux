@@ -1,0 +1,21 @@
+{
+  "name": "qm-ux",
+  "version": "0.0.1",
+  "description": "千米控制台管理端UI基础组件库、JS对象扩展、工具类、业务组件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://git.dev.qianmi.com/OF1518/qm-ux.git"
+  },
+  "keywords": [
+    "react",
+    "UI组件",
+    "工具类",
+    "业务组件"
+  ],
+  "author": "of1518",
+  "license": "ISC"
+}
