@@ -1,5 +1,23 @@
-*/.idea/
-.idea/
-.DS_Store
-node_modules/
-webpack.config.js
+# Include your project-specific ignores in this file
+# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+
+#IDE
+.idea/**
+**/*.iml
+
+#npm
+**/ncp-debug.log
+**/npm-debug.log
+**/yarn-error.log
+
+#
+**/build/**
+**/dist/**
+**/lib/**
+**/target/**
+
+**/.vscode/**
+**/.DS_Store
+**/node_modules/**
+**/properties/custom.json
+**/server/template/config.json
