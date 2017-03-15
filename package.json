@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/sheepwithouthorn/qm-ux"
   },
   "keywords": [
     "千米电商云",
